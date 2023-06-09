@@ -1,0 +1,97 @@
+/* 设置全局样式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: #eee;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Georgia, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 设置搜索框的样式 */
+.search-box {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* 设置搜索输入框的样式 */
+.search-input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* 设置搜索按钮的样式 */
+.search-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #00a1d6;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* 设置媒体查询，当屏幕宽度小于480像素时，改变搜索框的宽度 */
+@media screen and (max-width :480px) {
+    .search-box {
+        width: 90%;
+    }
+}
+
+/* 设置select标签的样式 */
+select {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+}
+
+/* 设置option标签的样式 */
+option {
+    font-size: 18px;
+}
+
+/* 设置select标签在获取焦点时的样式 */
+select:focus {
+    outline: none;
+}
+
+/* 设置select标签在鼠标悬停时的样式 */
+select:hover {
+    background-color: #e0e0e0;
+}
+
+/* 设置option标签在鼠标悬停时的样式 */
+option:hover {
+    background-color: #00a1d6;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #00a1d6;
+}
